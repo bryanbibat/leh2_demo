@@ -1,0 +1,28 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 30px auto;
+  max-width:700px;
+}
+
+.container {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  .image-container {
+    background-size: cover;
+    display: block;
+    width: 100px;
+    height: 100px;
+    .caption {
+      background-color: rgba(1, 1, 1, 0.2);
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}

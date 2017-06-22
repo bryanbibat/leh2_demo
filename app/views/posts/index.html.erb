@@ -1,0 +1,13 @@
+<%= form_with model: Post.new do |f| %>
+  <%= f.file_field :image %>
+  <br> 
+  <%= f.submit %>
+<% end %>
+
+<div class="container">
+  <% Post.all.each do |post| %>
+    <a href="<%=post.image_url %>" target="_blank" class="image-container" style="background-image:url(<%= post.image_url %>)">
+    </a>
+  <% end %>
+</div>
+
